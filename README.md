@@ -3,7 +3,7 @@ In this project I am building, hosting, and desinging my own web application wit
 
 PART 1: Creating an Azure Web app
 
-As the following images reveal, this project begins by typing in "App Services" into the search field and then once within App Services selecting the "+ Create" option to begin the creation of the Web App. 
+As the following images reveal, this project begins by typing in "App Services" into the search field and then once within App Services selecting the "+ Create" option.
 <img width="420" alt="Screenshot 2024-06-22 150140" src="https://github.com/dagimendale/AZUREproject/assets/142032863/d5dec099-91c7-477d-a120-fbab29fdbc08">
 <img width="420" alt="Screenshot 2024-06-22 150452" src="https://github.com/dagimendale/AZUREproject/assets/142032863/9ba446b5-8d75-479e-9f2d-d49741cb9576">
 
