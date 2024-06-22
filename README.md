@@ -1,13 +1,13 @@
 # Creating and Securing a Web App within Azure
-In this project I am building, hosting, and desinging my own web application within Azure. I started this project by setting up my Azure account and then familiarizing myself with the Azure environment.
+In this project I am building, hosting, and desinging my own web application within Azure. The preliminary work of this project was just setting up my Azure account with a subscription and resource group, then afterwards further familiarizing myself with the Azure environment.
 
 PART 1: Creating an Azure Web app
 
-This project begins by typing in "App Services" into the search field and then once within App Services selecting  "+ Create" option to begin the creation of the Web App.The following images display these simple actions:
+As the following images reveal, this project begins by typing in "App Services" into the search field and then once within App Services selecting the "+ Create" option to begin the creation of the Web App. 
 <img width="420" alt="Screenshot 2024-06-22 150140" src="https://github.com/dagimendale/AZUREproject/assets/142032863/d5dec099-91c7-477d-a120-fbab29fdbc08">
 <img width="420" alt="Screenshot 2024-06-22 150452" src="https://github.com/dagimendale/AZUREproject/assets/142032863/9ba446b5-8d75-479e-9f2d-d49741cb9576">
 
-
+ Now I slected my subscription and Resource group
 
 <img width="420" alt="Screenshot 2024-06-22 150656" src="https://github.com/dagimendale/AZUREproject/assets/142032863/ca1bc3fd-c249-4a97-baeb-15f8cc779397">
 
