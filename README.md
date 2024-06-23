@@ -22,11 +22,19 @@ In this project I am building, hosting, and desinging my own web application wit
 <img width="424" alt="Screenshot 2024-06-22 184214" src="https://github.com/dagimendale/AZUREproject/assets/142032863/63cfc1a1-851c-481f-99cf-66fe16eed6c4">
 
 
-Part 2A: Deploy a Container on the Web App
+**PART 2A: Deploy a Container on the Web App**
 
-Now using azure cloud shell I will deploy a preset [Docker container](https://hub.docker.com/r/cyberxsecurity/project1-apachewebserver) onto my web app.
+Now using azure cloud shell I will deploy a preset [Docker container](https://hub.docker.com/r/cyberxsecurity/project1-apachewebserver) onto my web app, in which contains the framework for the cyber blog webpage I am trying to create.
 
-Part 3A: Design Your Custom Web App
+1. Firstly, I opened Azure Cloud Shell and I entered "az webapp config container set --name bobswebapp --resource-group redteamRG --docker-custom-image-name cyberxsecurity/project1-apachewebserver --enable-app-service-storage -t" into the command line. This command configures my web app with the provided container's settings.
+
+2.To verify the container has been added correctly, I entered "az webapp config container show --name bobswebapp --resource-group redteamRG" into the command line, which shows the container for the web app. 
+
+3. Lastly, I type in the previously created domain to see that the container has been successfully deployed and is ready for customization.
+
+
+
+**PART 3A: Design Your Custom Web App**
 
 
 
