@@ -23,7 +23,9 @@ In this project I am building, hosting, and desinging my own web application wit
 
 
 Part 2A: Deploy a Container on the Web App
-Now using azure cloud shell I will deploy a preset Docker container onto my web app.https://hub.docker.com/r/cyberxsecurity/project1-apachewebserver
+
+Now using azure cloud shell I will deploy a preset [Docker container] (https://hub.docker.com/r/cyberxsecurity/project1-apachewebserver) onto my web app.
+
 Part 3A: Design Your Custom Web App
 
 
