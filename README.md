@@ -1,7 +1,7 @@
 # Creating and Securing a Web App within Azure
 In this project I am building, hosting, and desinging my own web application within Azure. The preliminary work of this project was just setting up my Azure account with a subscription and resource group, then afterwards further familiarizing myself with the Azure environment.(check prerequisites)
 
-PART 1A: Creating an Azure Web app
+**PART 1A: Creating an Azure Web app**
 
 1. As the two following images reveal, this project begins by typing in "App Services" into the search field and then once within App Services selecting the "+ Create" option.
 
@@ -23,16 +23,16 @@ PART 1A: Creating an Azure Web app
 
 
 Part 2A: Deploy a Container on the Web App
-
+Now using azure cloud shell I will deploy a preset Docker container onto my web app.https://hub.docker.com/r/cyberxsecurity/project1-apachewebserver
 Part 3A: Design Your Custom Web App
 
 
 
 
-Part 1B: Creating a Key Vault
+**Part 1B: Creating a Key Vault**
 
-Part 2B: Creating a Self-Signed Certificate
+**Part 2B: Creating a Self-Signed Certificate**
 
-Part 3B: Analyze a Self-Signed Certificate
+**Part 3B: Analyze a Self-Signed Certificate**
 
-Part 4B: Analyze a Trusted SSL Certificate
+**Part 4B: Analyze a Trusted SSL Certificate**
