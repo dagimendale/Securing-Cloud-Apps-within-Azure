@@ -38,7 +38,9 @@ Now using azure cloud shell I will deploy a preset [Docker container](https://hu
 **PART 3A: Design Your Custom Web App**
 
 After deploying the container that contained the framework the Web App, I am now able to apply my own customizations. First I used SSH to 
+
 <img width="425" alt="Screenshot 2024-07-03 115153" src="https://github.com/dagimendale/AZUREproject/assets/142032863/dfaa26d9-a2c3-4b19-af65-22a9327c2543">
+
 <img width="426" alt="Screenshot 2024-07-03 115341" src="https://github.com/dagimendale/AZUREproject/assets/142032863/eba493b8-9bf5-4269-8c29-1849dd91f5a0">
 
 
