@@ -1,5 +1,5 @@
 # Creating and Securing a Web App within Azure
-In this project I am building, hosting, and desinging my own web application within Azure. The preliminary work of this project was just setting up my Azure account with a subscription and resource group, then afterwards further familiarizing myself with the Azure environment.(check prerequisites)
+In this project I am building, hosting, and designing my own web application, specifically a cyber blog, all within the Azure environment. The preliminary work of this project was just setting up my Azure account with a subscription and resource group, then afterwards further familiarizing myself with the Azure environment.(check prerequisites)
 
 **PART 1A: Creating an Azure Web app**
 
@@ -30,6 +30,8 @@ Now using azure cloud shell I will deploy a preset [Docker container](https://hu
 2.To verify the container has been added correctly, I entered "az webapp config container show --name bobswebapp --resource-group redteamRG" into the command line, which shows the container for the web app. 
 3. Lastly, I type in the previously created domain to see that the container has been successfully deployed and is ready for customization.
 
+
+<img width="420" alt="Screenshot 2024-07-03 114637" src="https://github.com/dagimendale/AZUREproject/assets/142032863/5ec08e7c-1470-4b5f-a709-ee6c63b22b2a"> <img width="423" alt="Screenshot 2024-07-03 114826" src="https://github.com/dagimendale/AZUREproject/assets/142032863/359d365a-5c96-4d1b-b821-974a44a97bec">
 
 
 **PART 3A: Design Your Custom Web App**
