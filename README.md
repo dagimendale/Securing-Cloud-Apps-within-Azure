@@ -34,7 +34,7 @@ Now using azure cloud shell I will deploy a preset [Docker container](https://hu
 
 **PART 3A: Design Your Custom Web App**
 
-Designing Web app 
+After deploying the container that contained the framework the Web App, I am now able to apply my own customizations. First I used SSH to 
 
 
 **Part 1B: Creating a Key Vault**
