@@ -43,15 +43,20 @@ That directory contains the index.html file which makes up the webpage and to ed
 
 Lastly, I searched for two cybersecurity based topics or stories to base my blog posts around and then typed them out within the file.
 
+This marks the completion of creating my very own cloud-hosted web blog through Azure, the pictures below are some visuals of the web app. In the next section I will be securing this web app. 
  
 ⚠Important: Backing up your HTML⚠
+
  ● Restarting your virtual machine will often clear out any updates to your HTML 
 files. Therefore, it is important to back them up every time you make an 
 update!
+
  ● After each update to your webpage, use the following command to backup 
 your index.html file to your /home directory, which stays persistent across 
 reboots.
+
  ○ cp /var/www/html/index.html /home
+ 
  ● In case you need to restore your index.html file, run the following command:
  ○ cp /home/index.html /var/www/html/
  
@@ -62,7 +67,9 @@ reboots.
 
 <img width="386" alt="Screenshot 2024-08-04 182431" src="https://github.com/user-attachments/assets/747d7f66-79fd-4145-ad53-d9ce2f9a5bc2">
 
+
 <img width="311" alt="Screenshot 2024-08-04 182457" src="https://github.com/user-attachments/assets/4773db0e-f0a3-4ddd-a3b9-142f2c561c32">
+
 
 
 <img width="320" alt="Screenshot 2024-08-04 182407" src="https://github.com/user-attachments/assets/ec5221a6-7fa2-4a79-b85d-a4bd41041b92">
