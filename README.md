@@ -75,8 +75,10 @@ reboots.
 <img width="320" alt="Screenshot 2024-08-04 182407" src="https://github.com/user-attachments/assets/ec5221a6-7fa2-4a79-b85d-a4bd41041b92">
 
 
+Securing The Web App
 
 **Part 1B: Creating a Key Vault**
+8
 
 **Part 2B: Creating a Self-Signed Certificate**
 
