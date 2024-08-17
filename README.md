@@ -84,11 +84,16 @@ reboots.
 <img width="420" img height="100" alt="Screenshot 2024-08-17 145823" src="https://github.com/user-attachments/assets/6d24d96f-eb0c-47f3-8716-2933eb0d5c61">
 
 2. Within the "Create key vault" section, make the following selections:
+   
    ○ Subscription/Resource Group: Select the same subscription and resource groups that you selected on Day 1.
+   
    ○ Key Vault Name: Choose a key vault name, such as project1-KeyVault. (Note: This name must be globally unique, so you will be prompted to choose a different name if 
    the one you enter has been used before.)
+   
    ○ Region: Select the same region that you selected on Day 1.
+   
    ○ Pricing tier: Select the "Standard" tier.
+   
    ○ Leave the default options for all of the other tabs (Access Policy, Networking, Tags)
 
 <img width="262" alt="Screenshot 2024-08-17 150740" src="https://github.com/user-attachments/assets/55455236-52aa-4c83-a3e8-6a3404c02b65">
