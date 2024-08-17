@@ -76,10 +76,11 @@ reboots.
 <img width="320" alt="Screenshot 2024-08-04 182407" src="https://github.com/user-attachments/assets/ec5221a6-7fa2-4a79-b85d-a4bd41041b92">
 
 
-Securing The Web App
+**Securing The Web App**
 
 **Part 1B: Creating a Key Vault**
-8
+1. Firstly, you go within in the "key vaults" services section within Azure and select "+create" to begin creating your own key vault.
+<img width="423" alt="Screenshot 2024-08-17 145614" src="https://github.com/user-attachments/assets/067072b9-f99e-4c09-bc25-6c9440eb2c68">
 
 **Part 2B: Creating a Self-Signed Certificate**
 
