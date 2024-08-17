@@ -98,10 +98,7 @@ reboots.
 
 <img width="262" alt="Screenshot 2024-08-17 150740" src="https://github.com/user-attachments/assets/55455236-52aa-4c83-a3e8-6a3404c02b65">
 
-3. After your key vault has been created, select your new resource to view your new key vault. Preview the options available on your key vault to store secure information, including:
- ○ Keys
- ○ Secrets
- ○ Certificates
+3. After your key vault has been created, select your new resource to view your new key vault. Preview the options available on your key vault to store secure information, including "Keys", "Secrets", & "Certificates".
 
 <img width="412" alt="Screenshot 2024-08-17 151132" src="https://github.com/user-attachments/assets/ac90876b-ecca-4e2e-ab16-102af6629fdc">
 
