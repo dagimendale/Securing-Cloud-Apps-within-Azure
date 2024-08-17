@@ -81,6 +81,7 @@ reboots.
 **Part 1B: Creating a Key Vault**
 1. Firstly, you go within in the "key vaults" services section within Azure and select "+create" to begin creating your own key vault.
 <img width="423" alt="Screenshot 2024-08-17 145614" src="https://github.com/user-attachments/assets/067072b9-f99e-4c09-bc25-6c9440eb2c68">
+<img width="426" alt="Screenshot 2024-08-17 145823" src="https://github.com/user-attachments/assets/6d24d96f-eb0c-47f3-8716-2933eb0d5c61">
 
 **Part 2B: Creating a Self-Signed Certificate**
 
