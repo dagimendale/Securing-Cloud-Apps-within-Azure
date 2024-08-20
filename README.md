@@ -1,7 +1,7 @@
 # Creating and Securing a Web App within Azure
 In this project I am building, hosting, and designing my own web application, specifically a cyber blog, all within the Azure environment. The preliminary work of this project was just setting up my Azure account with a subscription and resource group, then afterwards further familiarizing myself with the Azure environment.(check prerequisites)
 
-##### **PART 1A: Creating an Azure Web app**
+#### **PART 1A: Creating an Azure Web app**
 1. As the two following images reveal, this project begins by typing in "App Services" into the search field and then once within App Services selecting the "+ Create" option.
 
 
