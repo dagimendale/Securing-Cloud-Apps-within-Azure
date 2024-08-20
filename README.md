@@ -1,5 +1,11 @@
 # Setting up and Securing a Web App within Azure
-In this project I am building, hosting, and designing my own web application all within the Azure environment. The preliminary work of this project was just setting up my Azure account with a subscription and resource group, then afterwards further familiarizing myself with the Azure environment.(check prerequisites)
+In this project I am building, hosting, and designing my own web application all within the Azure environment. The preliminary work of this project was just setting up my Azure account with a subscription and resource group, then afterwards further familiarizing myself with the Azure environment.By the end of this project I will have created a key vault
+● (1) Created a key vault.
+● (2) Created a self-signed certificate.
+● (3) Analyzed a self-signed certificate
+● (4) Analyzed a trusted certificate
+● (5) Answered review questions.
+
 
 #### **PART 1A: Creating an Azure Web app**
 
@@ -103,7 +109,136 @@ reboots.: cp /var/www/html/index.html /home
 <img width="412" alt="Screenshot 2024-08-17 151132" src="https://github.com/user-attachments/assets/ac90876b-ecca-4e2e-ab16-102af6629fdc">
 
 #### **Part 2B: Creating a Self-Signed Certificate**
+1. From your Azure portal, access the same Cloud Shell that you accessed before to load the Docker container. ○ From this command line, you will now use the open source cryptography
+and SSL/TLS "toolkit" OpenSSL (it is preinstalled).
+■ Recall that during Cryptography week, we used OpenSSL to
+generate keys and an IV to encrypt a message.
+2. Next, you will use OpenSSL to generate a self-signed certificate.
+○ A self-signed certificate is a certificate that has not been signed by a
+certificate authority.
+○ These certificates are simple to create and have no expense.
+○ We will explore their advantages and disadvantages in today's review
+questions.
+3. From the command line, enter the following command: openssl req -x509
+-sha256 -nodes -days 365 -newkey rsa:2048 -keyout <privatekeyname.key>
+-out <certificatename.crt> -addext "extendedKeyUsage=serverAuth"
+○ For example: openssl req -x509 -sha256 -nodes -days 365 -newkey
+rsa:2048 -keyout project1_key.key -out project1_cert.crt -addext
+"extendedKeyUsage=serverAuth"
+○ The following image shows this step:
+
+○ We added the following options:
+■ -x509: Indicates for OpenSSL to create an SSL certificate.
+■ -sha256: Uses the sha256 hashing algorithm.
+■ -nodes
+■ -days 365: States the certificate will be valid for one year.
+■ -newkey rsa:2048: Uses a 2048-bit RSA key
+■ -keyout project1_key.key: The outputted name of the private key.
+■ -out project1_cert.crt: The outputted name of the certificate.
+■ -addext "extendedKeyUsage=serverAuth": Indicates how a public
+key can be used.
+4. After pressing Enter, you will be asked several questions about your certificate.
+Answer the following:
+○ Country Name (2 letter code) [AU]: Enter your country.
+○ State or Province Name (full name) [Some State]: Enter your state.
+○ Locality Name (e.g., city) [ ]: Enter your city.
+○ Organization Name (e.g., company) [Internet Widgits Pty Ltd]: Enter
+"Student".
+○ Organizational Unit Name (e.g., section) [ ]: Leave blank by pressing
+Enter.
+○ Common Name (e.g., server FQDN or YOUR name) [ ]: Enter your full
+domain name, such as "bobsblog.com".
+○ Email Address [ ]: Leave blank by pressing Enter.
+The following image shows this step:
+
+5. Now, view your newly created key (.key) and certificate (.crt) by running ls, as
+the following image shows:
+
+
+○ Note that Azure requires a PFX format for its certificates.
+■ The PFX format is the server certificate and the private key
+combined into a single encrypted file.
+
+6. To create a PFX format, run the following command: openssl pkcs12 -export
+-out <new_certificatename.pfx> -inkey <keyname.key> -in
+<certificename.crt>
+○ For example: openssl pkcs12 -export -out project1_cert.pfx -inkey
+project1_key.key -in project1_cert.crt
+○ We added the following options:
+■ pkcs12: Indicates for OpenSSL to create a PFX certificate.
+■ -export -out project1_cert.pfx: States what to name the PFX file.
+■ -inkey project1_key.key: This is the current private key that you are
+importing.
+■ -in project1_cert.crt: This is the current certificate that you are
+importing.
+
+7. After pressing Enter, you will be prompted for a password to encrypt your PFX
+key.
+○ Don't forget your password, as you will be prompted for it again shortly!
+○ The following image shows this step:
+
+8. View your new PFX certificate by running ls, as the following image shows:
+
+9. To download your new PFX certificate, complete the following five steps:
+○ (1) Click the "Upload/Download" icon in the toolbar above your Cloud
+Shell window.
+○ (2) Select "Download."
+○ (3) Enter the name of your PFX certificate in the "Download a file" window.
+○ (4) Click "Download."
+○ (5) Then click the “Download your certificate” button.
+The following image shows these steps:
 
 #### **Part 3B: Analyze a Self-Signed Certificate**
+In this part, you will use Azure to import and analyze self-signed certificates To do so,
+complete the following steps:
+1. From the Azure Portal, select "Key Vaults."
+○ Select the key vault that you created in Part 1.
+2. From your key vault, select "Certificates" and then "+ Generate/Import," as the
+following image shows:
+
+3. On the "Create a certificate" page, select the following:
+○ Method of Certificate Creation: Import
+○ Certificate Name: project1PFX-cert
+○ Upload Certificate File: Select your PFX certificate (it's likely in your
+Downloads folder)
+○ Password: Enter the password that you created in Part 2
+The following image shows these steps:
+
+4. Select "Create" to upload your certificate.
+○ The following success message should appear to confirm that your PFX
+certificate has been uploaded to your key vault:
+
+5. ⚠️ Normally, after uploading a certificate, you would add it to your web
+application. Since you have selected the free domain option and Azure has
+already provided a certificate, you will instead analyze a mock self-signed
+certificate.
+
+6. Navigate to the following webpage: https://self-signed.badssl.com/.
+● This webpage represents how your application would operate if you had
+added your self-signed certificate to it.
+● Did your browser return an error like the one shown in the following
+image?
+
+7. Let's examine this webpage's certificate. Click "Not secure" in the search bar if
+you are in Chrome, or a similar message depending on your browser, as shown
+in the following image:
+
+
+○ After selecting "Not secure," select "Certificate (Invalid)" from the menu to
+examine the certificate.
+○ Note the reason for the error based on the message on the certificate.
+This is due to the fact that the certificate was not created by a trusted
+CA—it would have been created by you.
 
 #### **Part 4B: Analyze a Trusted SSL Certificate**
+In this part, you will analyze a trusted SSL certificate. An advantage of using Azure's
+free domain, "azurewebsites.net," is that Microsoft provides the secure SSL certificate.
+To analyze this certificate, complete the following steps:
+1. Open a browser, and access the domain that you created on Day 1
+(webpage@azurewebsites.net).
+○ Did you encounter any errors, like you did with the self-signed certificate?
+2. Click on the lock icon in the top left of your browser (the left-hand side of the
+search bar) to analyze your certificate and its details.
+You will answer review questions about your certificate in the next part of the activity.
+
+
