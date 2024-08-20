@@ -6,8 +6,8 @@ In this project I am building, hosting, and designing my own web application, sp
 1. As the two following images reveal, this project begins by typing in "App Services" into the search field and then once within App Services selecting the "+ Create" option.
 
 
-<img width="420" alt="Screenshot 2024-06-22 150140" src="https://github.com/dagimendale/AZUREproject/assets/142032863/d5dec099-91c7-477d-a120-fbab29fdbc08">
-<img width="420" alt="Screenshot 2024-06-22 150452" src="https://github.com/dagimendale/AZUREproject/assets/142032863/9ba446b5-8d75-479e-9f2d-d49741cb9576">
+<img width="400" img height="100" alt="Screenshot 2024-06-22 150140" src="https://github.com/dagimendale/AZUREproject/assets/142032863/d5dec099-91c7-477d-a120-fbab29fdbc08">
+<img width="400" img height="100" alt="Screenshot 2024-06-22 150452" src="https://github.com/dagimendale/AZUREproject/assets/142032863/9ba446b5-8d75-479e-9f2d-d49741cb9576">
 
 
 2. Now within the "Basics" section I selected my subscription and my previously created resource group. I then created the domain name, code as the publish option, "PHP 8.2" for the Runtime Stack, Linux for the OS, and the region associated to my resource group. Afterwards, I selected the sevice pricing plan which I put as Basic B1 option and every other section I left as default, leading to me finally selecting the create option. The newly created resource was provided with the cutom domain name we made earlier, as well as a unique IP address.
