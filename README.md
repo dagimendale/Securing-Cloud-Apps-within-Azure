@@ -28,16 +28,16 @@ Now using azure cloud shell I will deploy a preset [Docker container](https://hu
 2.To verify the container has been added correctly, I entered "az webapp config container show --name bobswebapp --resource-group redteamRG" into the command line, which shows the container for the web app. Lastly, I type in the previously created domain to confirm that the container has been successfully deployed and is ready for customization.
 
 
-<img width="420" alt="Screenshot 2024-07-03 114637" src="https://github.com/dagimendale/AZUREproject/assets/142032863/5ec08e7c-1470-4b5f-a709-ee6c63b22b2a"> 
+<img width="400" img height="100" alt="Screenshot 2024-07-03 114637" src="https://github.com/dagimendale/AZUREproject/assets/142032863/5ec08e7c-1470-4b5f-a709-ee6c63b22b2a"> 
 
 
-<img width="423" alt="Screenshot 2024-07-03 114826" src="https://github.com/dagimendale/AZUREproject/assets/142032863/359d365a-5c96-4d1b-b821-974a44a97bec"> 
+<img width="400" img height="100" alt="Screenshot 2024-07-03 114826" src="https://github.com/dagimendale/AZUREproject/assets/142032863/359d365a-5c96-4d1b-b821-974a44a97bec"> 
 
-<img width="388" alt="Screenshot 2024-07-03 115016" src="https://github.com/dagimendale/AZUREproject/assets/142032863/36745b82-0e56-46ac-b373-328fbb11c992">
+<img width="400"  img height="100" alt="Screenshot 2024-07-03 115016" src="https://github.com/dagimendale/AZUREproject/assets/142032863/36745b82-0e56-46ac-b373-328fbb11c992">
 
 
 
-**PART 3A: Design Your Custom Web App**
+#### **PART 3A: Design Your Custom Web App**
 
 After deploying the container that contained the framework the Web App, I am now able to apply my own customizations. First I used SSH within Azure to gain access to the container containing the HTML files, then once in I changed directories to the directory where the HTML files are located by running "cd /var/www/html".
 
@@ -78,23 +78,23 @@ reboots.: cp /var/www/html/index.html /home
 
 ## **Securing The Web App**
 
-**Part 1B: Creating a Key Vault**
+#### **Part 1B: Creating a Key Vault**
 1. Firstly, you go within in the "key vaults" services section within Azure and select "+create" to begin creating your own key vault.
 <img width="420" img height="100" alt="Screenshot 2024-08-17 145614" src="https://github.com/user-attachments/assets/067072b9-f99e-4c09-bc25-6c9440eb2c68">
 <img width="420" img height="100" alt="Screenshot 2024-08-17 145823" src="https://github.com/user-attachments/assets/6d24d96f-eb0c-47f3-8716-2933eb0d5c61">
 
 2. Within the "Create key vault" section, make the following selections:
    
-   ○ Subscription/Resource Group: Select the same subscription and resource groups that you selected on Day 1.
+   ● Subscription/Resource Group: Select the same subscription and resource groups that you selected on Day 1.
    
-   ○ Key Vault Name: Choose a key vault name, such as project1-KeyVault. (Note: This name must be globally unique, so you will be prompted to choose a different name if 
+   ● Key Vault Name: Choose a key vault name, such as project1-KeyVault. (Note: This name must be globally unique, so you will be prompted to choose a different name if 
    the one you enter has been used before.)
    
-   ○ Region: Select the same region that you selected on Day 1.
+   ● Region: Select the same region that you selected on Day 1.
    
-   ○ Pricing tier: Select the "Standard" tier.
+   ● Pricing tier: Select the "Standard" tier.
    
-   ○ Leave the default options for all of the other tabs (Access Policy, Networking, Tags)
+   ● Leave the default options for all of the other tabs (Access Policy, Networking, Tags)
 
 <img width="262" alt="Screenshot 2024-08-17 150740" src="https://github.com/user-attachments/assets/55455236-52aa-4c83-a3e8-6a3404c02b65">
 
@@ -102,8 +102,8 @@ reboots.: cp /var/www/html/index.html /home
 
 <img width="412" alt="Screenshot 2024-08-17 151132" src="https://github.com/user-attachments/assets/ac90876b-ecca-4e2e-ab16-102af6629fdc">
 
-**Part 2B: Creating a Self-Signed Certificate**
+#### **Part 2B: Creating a Self-Signed Certificate**
 
-**Part 3B: Analyze a Self-Signed Certificate**
+#### **Part 3B: Analyze a Self-Signed Certificate**
 
-**Part 4B: Analyze a Trusted SSL Certificate**
+#### **Part 4B: Analyze a Trusted SSL Certificate**
