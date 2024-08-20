@@ -12,14 +12,14 @@ In this project I am building, hosting, and designing my own web application, sp
 
 2. Now within the "Basics" section I selected my subscription and my previously created resource group. I then created the domain name, code as the publish option, "PHP 8.2" for the Runtime Stack, Linux for the OS, and the region associated to my resource group. Afterwards, I selected the sevice pricing plan which I put as Basic B1 option and every other section I left as default, leading to me finally selecting the create option. The newly created resource was provided with the cutom domain name we made earlier, as well as a unique IP address.
 
-<img width="420" alt="Screenshot 2024-06-22 150656" src="https://github.com/dagimendale/AZUREproject/assets/142032863/ca1bc3fd-c249-4a97-baeb-15f8cc779397">
+<img width="400" img height="100" alt="Screenshot 2024-06-22 150656" src="https://github.com/dagimendale/AZUREproject/assets/142032863/ca1bc3fd-c249-4a97-baeb-15f8cc779397">
 
 
 
 
-<img width="400" alt="Screenshot 2024-06-22 150758" src="https://github.com/dagimendale/AZUREproject/assets/142032863/d952ae75-7e57-43af-ba83-cf74e6c1e1cb">
+<img width="400" img height="100" alt="Screenshot 2024-06-22 150758" src="https://github.com/dagimendale/AZUREproject/assets/142032863/d952ae75-7e57-43af-ba83-cf74e6c1e1cb">
 
-<img width="424" alt="Screenshot 2024-06-22 184214" src="https://github.com/dagimendale/AZUREproject/assets/142032863/63cfc1a1-851c-481f-99cf-66fe16eed6c4">
+<img width="400" img height="100" alt="Screenshot 2024-06-22 184214" src="https://github.com/dagimendale/AZUREproject/assets/142032863/63cfc1a1-851c-481f-99cf-66fe16eed6c4">
 
 
 **PART 2A: Deploy a Container on the Web App**
