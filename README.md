@@ -78,7 +78,7 @@ reboots.
 
 
 
-<img width="800" img height="250" alt="Screenshot 2024-08-04 182407" src="https://github.com/user-attachments/assets/ec5221a6-7fa2-4a79-b85d-a4bd41041b92">
+<img width="500" img height="250" alt="Screenshot 2024-08-04 182407" src="https://github.com/user-attachments/assets/ec5221a6-7fa2-4a79-b85d-a4bd41041b92">
 
 
 **Securing The Web App**
