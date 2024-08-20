@@ -19,7 +19,7 @@ In this project I am building, hosting, and designing my own web application, sp
 <img width="400" img height="200" alt="Screenshot 2024-06-22 184214" src="https://github.com/dagimendale/AZUREproject/assets/142032863/63cfc1a1-851c-481f-99cf-66fe16eed6c4">
 
 
-# **PART 2A: Deploy a Container on the Web App**
+#### **PART 2A: Deploy a Container on the Web App**
 
 Now using azure cloud shell I will deploy a preset [Docker container](https://hub.docker.com/r/cyberxsecurity/project1-apachewebserver) onto my web app, in which contains the framework for the cyber blog webpage I am trying to create.
 
