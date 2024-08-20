@@ -24,10 +24,10 @@ In this project I am building, hosting, and designing my own web application, sp
 
 Now using azure cloud shell I will deploy a preset [Docker container](https://hub.docker.com/r/cyberxsecurity/project1-apachewebserver) onto my web app, in which contains the framework for the cyber blog webpage I am trying to create.
 
-1. Firstly, I opened Azure Cloud Shell and I entered "az webapp config container set --name bobswebapp --resource-group redteamRG --docker-custom-image-name cyberxsecurity/project1-apachewebserver --enable-app-service-storage -t" into the command line. This command configures my web app with the provided container's settings.
+1.Firstly, I opened Azure Cloud Shell and I entered "az webapp config container set --name bobswebapp --resource-group redteamRG --docker-custom-image-name cyberxsecurity/project1-apachewebserver --enable-app-service-storage -t" into the command line. This command configures my web app with the provided container's settings.
 
 2.To verify the container has been added correctly, I entered "az webapp config container show --name bobswebapp --resource-group redteamRG" into the command line, which shows the container for the web app. 
-3. Lastly, I type in the previously created domain to see that the container has been successfully deployed and is ready for customization.
+3.Lastly, I type in the previously created domain to see that the container has been successfully deployed and is ready for customization.
 
 
 <img width="420" alt="Screenshot 2024-07-03 114637" src="https://github.com/dagimendale/AZUREproject/assets/142032863/5ec08e7c-1470-4b5f-a709-ee6c63b22b2a"> 
