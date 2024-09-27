@@ -28,7 +28,10 @@ Open Azure Cloud Shell and run the following command to deploy a Docker containe
 ```bash
 az webapp config container set --name <app-name> --resource-group <resource-group> --docker-custom-image-name <container-name> --enable-app-service-storage -t
 ```
-
+Verify the container deployment:
+```bash
+az webapp config container show --name <app-name> --resource-group <resource-group>
+```
 
 
 
