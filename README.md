@@ -1,4 +1,64 @@
 # Setting up and Securing a Web App within Azure
+In this project, I build, host, and design a web application within the Azure environment, focusing on both the deployment and security aspects.
+
+Project Overview
+This project walks through:
+
+### Creating a web application in Azure.
+Deploying a Docker container.
+Customizing the web app.
+Securing the web app using Azure Key Vault and SSL certificates.
+
+### By the end of this project, you will learn how to:
+
+Create an Azure web app.
+Deploy a Docker container.
+Secure the application using Azure Key Vault and certificates.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Setting up and Securing a Web App within Azure
 In this project I am building, hosting, and designing my own web application all within the Azure environment. The preliminary work of this project was just setting up my Azure account with a subscription and resource group, then afterwards further familiarizing myself with the Azure environment.By the end of this project I will have created a key vault
 ● (1) Created a key vault.
 ● (2) Created a self-signed certificate.
