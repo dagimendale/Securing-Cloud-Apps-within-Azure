@@ -3,60 +3,58 @@ In this project, I build, host, and design a web application within the Azure en
 
 ## Project Overview
 This project walks through:
-
-Creating a web application in Azure.
-Deploying a Docker container.
-Customizing the web app.
-Securing the web app using Azure Key Vault and SSL certificates.
+- Creating a web application in Azure.
+- Deploying a Docker container.
+- Customizing the web app.
+- Securing the web app using Azure Key Vault and SSL certificates.
 
 By the end of this project, you will learn how to:
-
-Create an Azure web app.
-Deploy a Docker container.
-Secure the application using Azure Key Vault and certificates.
+- Create an Azure web app.
+- Deploy a Docker container.
+- Secure the application using Azure Key Vault and certificates.
 
 
 ## Project Breakdown
 ### 1. Setting Up the Azure Web App
-**Create a Web App**: Navigate to **App Services** and select "+ Create."
-Choose subscription, resource group, domain name, runtime (PHP 8.2), and OS (Linux).
-Select **Basic B1** as the pricing plan.
+- **Create a Web App**: Navigate to **App Services** and select "+ Create."
+    - Choose subscription, resource group, domain name, runtime (PHP 8.2), and OS (Linux).
+    - Select **Basic B1** as the pricing plan.
 
 **Screenshots**:
 ### 2. Deploy a Container on the Web App
-Open Azure Cloud Shell and run the following command to deploy a Docker container:
+- Open Azure Cloud Shell and run the following command to deploy a Docker container:
 ```bash
 az webapp config container set --name <app-name> --resource-group <resource-group> --docker-custom-image-name <container-name> --enable-app-service-storage -t
 ```
-Verify the container deployment:
+- Verify the container deployment:
 ```bash
 az webapp config container show --name <app-name> --resource-group <resource-group>
 ```
 
 ### 3.Customizing the Web App
-SSH into the container and navigate to /var/www/html.
+- SSH into the container and navigate to /var/www/html.
 
-Edit the index.html file with:
+- Edit the index.html file with:
 ```bash
 nano index.html
 ```
-Update the HTML content with your own details and blog posts.
+- Update the HTML content with your own details and blog posts.
 
 **Screenshots**:
 
 ### 4. Securing the Web App
 #### 4.1 Create a Key Vault
-Navigate to Key Vaults in Azure and create a new key vault.
-Assign subscription, resource group, and select the Standard pricing tier.
+- Navigate to Key Vaults in Azure and create a new key vault.
+    - Assign subscription, resource group, and select the Standard pricing tier.
 **Screenshots**:
 
 #### 4.2 Create and Analyze Certificates
-Use OpenSSL to generate a self-signed certificate:
+- Use OpenSSL to generate a self-signed certificate:
 
 ```bash
 openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout <privatekeyname.key> -out <certificatename.crt> -addext "extendedKeyUsage=serverAuth"
 ```
-Convert the certificate to PFX format for Azure:
+- Convert the certificate to PFX format for Azure:
 
 ```bash
 openssl pkcs12 -export -out <new_certificatename.pfx> -inkey <keyname.key> -in <certificatename.crt>
@@ -64,22 +62,22 @@ openssl pkcs12 -export -out <new_certificatename.pfx> -inkey <keyname.key> -in <
 **Screenshots**:
 
 ### 5. Certificate Analysis
-Self-Signed Certificate: Examine the certificate error by navigating to https://self-signed.badssl.com/.
+- **Self-Signed Certificate**: Examine the certificate error by navigating to https://self-signed.badssl.com/.
+  
 **Screenshots**:
 
-Trusted SSL Certificate: Analyze the certificate of your web app domain on Azure.
+**Trusted SSL Certificate**: Analyze the certificate of your web app domain on Azure.
 
 
 ## Backup and Recovery of HTML Files
-To avoid losing changes, always back up your HTML files after making updates:
-
+- To avoid losing changes, always back up your HTML files after making updates:
+  
 ```bash
-
 cp /var/www/html/index.html /home
 ```
-To restore the file:
+- To restore the file:
+  
 ```bash
-
 cp /home/index.html /var/www/html/
 ```
 ## Conclusion
