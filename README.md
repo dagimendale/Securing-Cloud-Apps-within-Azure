@@ -18,13 +18,14 @@ Secure the application using Azure Key Vault and certificates.
 
 ## Project Breakdown
 ### 1. Setting Up the Azure Web App
-Create a Web App: Navigate to App Services and select "+ Create."
+**Create a Web App**: Navigate to **App Services** and select "+ Create."
 Choose subscription, resource group, domain name, runtime (PHP 8.2), and OS (Linux).
-Select Basic B1 as the pricing plan.
+Select **Basic B1** as the pricing plan.
 
 #### Screenshots:
 ## 2. Deploy a Container on the Web App
 Open Azure Cloud Shell and run the following command to deploy a Docker container:
+az webapp config container set --name <app-name> --resource-group <resource-group> --docker-custom-image-name <container-name> --enable-app-service-storage -t
 
 
 
