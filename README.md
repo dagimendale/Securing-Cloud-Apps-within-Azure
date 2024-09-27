@@ -1,25 +1,30 @@
 # Setting up and Securing a Web App within Azure
 In this project, I build, host, and design a web application within the Azure environment, focusing on both the deployment and security aspects.
 
-Project Overview
+## Project Overview
 This project walks through:
 
-### Creating a web application in Azure.
+Creating a web application in Azure.
 Deploying a Docker container.
 Customizing the web app.
 Securing the web app using Azure Key Vault and SSL certificates.
 
-### By the end of this project, you will learn how to:
+By the end of this project, you will learn how to:
 
 Create an Azure web app.
 Deploy a Docker container.
 Secure the application using Azure Key Vault and certificates.
 
 
+## Project Breakdown
+### 1. Setting Up the Azure Web App
+Create a Web App: Navigate to App Services and select "+ Create."
+Choose subscription, resource group, domain name, runtime (PHP 8.2), and OS (Linux).
+Select Basic B1 as the pricing plan.
 
-
-
-
+#### Screenshots:
+## 2. Deploy a Container on the Web App
+Open Azure Cloud Shell and run the following command to deploy a Docker container:
 
 
 
