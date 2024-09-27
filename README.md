@@ -25,7 +25,9 @@ Select **Basic B1** as the pricing plan.
 #### Screenshots:
 ## 2. Deploy a Container on the Web App
 Open Azure Cloud Shell and run the following command to deploy a Docker container:
+```bash
 az webapp config container set --name <app-name> --resource-group <resource-group> --docker-custom-image-name <container-name> --enable-app-service-storage -t
+```
 
 
 
