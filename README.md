@@ -22,8 +22,8 @@ Secure the application using Azure Key Vault and certificates.
 Choose subscription, resource group, domain name, runtime (PHP 8.2), and OS (Linux).
 Select **Basic B1** as the pricing plan.
 
-#### Screenshots:
-## 2. Deploy a Container on the Web App
+**Screenshots**:
+### 2. Deploy a Container on the Web App
 Open Azure Cloud Shell and run the following command to deploy a Docker container:
 ```bash
 az webapp config container set --name <app-name> --resource-group <resource-group> --docker-custom-image-name <container-name> --enable-app-service-storage -t
@@ -33,10 +33,57 @@ Verify the container deployment:
 az webapp config container show --name <app-name> --resource-group <resource-group>
 ```
 
+### 3.Customizing the Web App
+SSH into the container and navigate to /var/www/html.
+
+Edit the index.html file with:
+```bash
+nano index.html
+```
+Update the HTML content with your own details and blog posts.
+
+**Screenshots**:
+
+### 4. Securing the Web App
+#### 4.1 Create a Key Vault
+Navigate to Key Vaults in Azure and create a new key vault.
+Assign subscription, resource group, and select the Standard pricing tier.
+**Screenshots**:
+
+#### 4.2 Create and Analyze Certificates
+Use OpenSSL to generate a self-signed certificate:
+
+```bash
+openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout <privatekeyname.key> -out <certificatename.crt> -addext "extendedKeyUsage=serverAuth"
+```
+Convert the certificate to PFX format for Azure:
+
+```bash
+openssl pkcs12 -export -out <new_certificatename.pfx> -inkey <keyname.key> -in <certificatename.crt>
+```
+**Screenshots**:
+
+### 5. Certificate Analysis
+Self-Signed Certificate: Examine the certificate error by navigating to https://self-signed.badssl.com/.
+**Screenshots**:
+
+Trusted SSL Certificate: Analyze the certificate of your web app domain on Azure.
 
 
+## Backup and Recovery of HTML Files
+To avoid losing changes, always back up your HTML files after making updates:
 
+```bash
 
+cp /var/www/html/index.html /home
+```
+To restore the file:
+```bash
+
+cp /home/index.html /var/www/html/
+```
+## Conclusion
+This project demonstrates how to deploy and secure a web application using Azure services. From setting up an app service to deploying Docker containers and securing it using SSL certificates, this project covers essential steps in modern web application development and security.
 
 
 
