@@ -21,6 +21,8 @@ By the end of this project, you will learn how to:
     - Select **Basic B1** as the pricing plan.
 
 **Screenshots**:
+
+
 <img width="400" img height="100" alt="Screenshot 2024-06-22 150140" src="https://github.com/dagimendale/AZUREproject/assets/142032863/d5dec099-91c7-477d-a120-fbab29fdbc08">
 <img width="400" img height="100" alt="Screenshot 2024-06-22 150452" src="https://github.com/dagimendale/AZUREproject/assets/142032863/9ba446b5-8d75-479e-9f2d-d49741cb9576">
 <img width="400" img height="200" alt="Screenshot 2024-06-22 150656" src="https://github.com/dagimendale/AZUREproject/assets/142032863/ca1bc3fd-c249-4a97-baeb-15f8cc779397">
