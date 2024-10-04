@@ -97,7 +97,7 @@ nano index.html
 <img width="420" img height="100" alt="Screenshot 2024-08-17 145823" src="https://github.com/user-attachments/assets/6d24d96f-eb0c-47f3-8716-2933eb0d5c61">
 
 
-
+<img width="262" alt="Screenshot 2024-08-17 150740" src="https://github.com/user-attachments/assets/55455236-52aa-4c83-a3e8-6a3404c02b65">
 
 
 
