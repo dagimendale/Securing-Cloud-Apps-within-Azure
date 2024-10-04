@@ -62,6 +62,19 @@ nano index.html
 - Update the HTML content with your own details and blog posts.
 
 **Screenshots**:
+<img width="400" img height="100" alt="Screenshot 2024-07-03 115153" src="https://github.com/dagimendale/AZUREproject/assets/142032863/dfaa26d9-a2c3-4b19-af65-22a9327c2543">
+
+<img width="400" img height="100" alt="Screenshot 2024-07-03 115341" src="https://github.com/dagimendale/AZUREproject/assets/142032863/eba493b8-9bf5-4269-8c29-1849dd91f5a0">
+
+<img width="400" img height="250" alt="Screenshot 2024-08-04 182431" src="https://github.com/user-attachments/assets/747d7f66-79fd-4145-ad53-d9ce2f9a5bc2">
+
+
+<img width="400" img height="250" alt="Screenshot 2024-08-04 182457" src="https://github.com/user-attachments/assets/4773db0e-f0a3-4ddd-a3b9-142f2c561c32">
+
+
+
+<img width="500" img height="250" alt="Screenshot 2024-08-04 182407" src="https://github.com/user-attachments/assets/ec5221a6-7fa2-4a79-b85d-a4bd41041b92">
+
 
 ### 4. Securing the Web App
 #### 4.1 Create a Key Vault
