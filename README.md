@@ -93,15 +93,12 @@ nano index.html
     - 
 **Screenshots**:
 
-<img width="420" img height="100" alt="Screenshot 2024-08-17 145614" src="https://github.com/user-attachments/assets/067072b9-f99e-4c09-bc25-6c9440eb2c68">
-<img width="420" img height="100" alt="Screenshot 2024-08-17 145823" src="https://github.com/user-attachments/assets/6d24d96f-eb0c-47f3-8716-2933eb0d5c61">
-
 
 <img width="262" alt="Screenshot 2024-08-17 150740" src="https://github.com/user-attachments/assets/55455236-52aa-4c83-a3e8-6a3404c02b65">
 
 
 
-
+<img width="412" alt="Screenshot 2024-08-17 151132" src="https://github.com/user-attachments/assets/ac90876b-ecca-4e2e-ab16-102af6629fdc">
 
 
 #### 4.2 Create and Analyze Certificates
