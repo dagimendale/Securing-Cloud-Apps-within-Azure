@@ -103,22 +103,23 @@ nano index.html
 
 
 #### 4.2 Create and Analyze Certificates
-- Use OpenSSL to generate a self-signed certificate:
+- Generate Certificate and Key: Use the following OpenSSL command in Azure Cloud Shell to create a self-signed certificate valid for 365 days:
 
 ```bash
 openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout <privatekeyname.key> -out <certificatename.crt> -addext "extendedKeyUsage=serverAuth"
 ```
-- Convert the certificate to PFX format for Azure:
+- Convert to PFX Format: Azure requires PFX format for certificates. Convert your certificate using this command:
 
 ```bash
 openssl pkcs12 -export -out <new_certificatename.pfx> -inkey <keyname.key> -in <certificatename.crt>
 ```
-**Screenshots**:
+-Download PFX Certificate:
+   -In Azure Cloud Shell, click the "Upload/Download" icon.
+   -Select Download and enter the certificate's name (e.g., project1_cert.pfx).
 
 ### 5. Certificate Analysis
 - **Self-Signed Certificate**: Examine the certificate error by navigating to https://self-signed.badssl.com/.
   
-**Screenshots**:
 
 **Trusted SSL Certificate**: Analyze the certificate of your web app domain on Azure.
 
