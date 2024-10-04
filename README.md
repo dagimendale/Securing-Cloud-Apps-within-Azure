@@ -33,7 +33,7 @@ By the end of this project, you will learn how to:
 <img width="400" img height="200" alt="Screenshot 2024-06-22 184214" src="https://github.com/dagimendale/AZUREproject/assets/142032863/63cfc1a1-851c-481f-99cf-66fe16eed6c4">
 
 ### 2. Deploy a Container on the Web App
-- Open Azure Cloud Shell and run the following command to deploy a Docker container:
+- Open Azure Cloud Shell and run the following command to deploy a preset [Docker container](https://hub.docker.com/r/cyberxsecurity/project1-apachewebserver), which contains the framework for the cyber blog webpage I am trying to create.:
 ```bash
 az webapp config container set --name <app-name> --resource-group <resource-group> --docker-custom-image-name <container-name> --enable-app-service-storage -t
 ```
@@ -41,6 +41,15 @@ az webapp config container set --name <app-name> --resource-group <resource-grou
 ```bash
 az webapp config container show --name <app-name> --resource-group <resource-group>
 ```
+**Screenshots**:
+
+<img width="400" img height="100" alt="Screenshot 2024-07-03 114637" src="https://github.com/dagimendale/AZUREproject/assets/142032863/5ec08e7c-1470-4b5f-a709-ee6c63b22b2a"> 
+
+
+<img width="400" img height="100" alt="Screenshot 2024-07-03 114826" src="https://github.com/dagimendale/AZUREproject/assets/142032863/359d365a-5c96-4d1b-b821-974a44a97bec"> 
+
+<img width="400"  img height="100" alt="Screenshot 2024-07-03 115016" src="https://github.com/dagimendale/AZUREproject/assets/142032863/36745b82-0e56-46ac-b373-328fbb11c992">
+
 
 ### 3.Customizing the Web App
 - SSH into the container and navigate to /var/www/html.
