@@ -89,8 +89,9 @@ nano index.html
 #### 4.1 Create a Key Vault
 - Navigate to Key Vaults in Azure and create a new key vault.
     - Assign subscription, resource group, and select the Standard pricing tier.
- 
-    - 
+    - Leave the default options for all of the other tabs (Access Policy, Networking, Tags)
+- After your key vault has been created, select your new resource to view your new key vault. Preview the options available on your key vault to store secure information, including "Keys", "Secrets", & "Certificates".
+
 **Screenshots**:
 
 
