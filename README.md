@@ -44,6 +44,8 @@ az webapp config container show --name <app-name> --resource-group <resource-gro
 
 **Screenshots**:
 
+
+
 <img width="400" img height="100" alt="Screenshot 2024-07-03 114637" src="https://github.com/dagimendale/AZUREproject/assets/142032863/5ec08e7c-1470-4b5f-a709-ee6c63b22b2a"> 
 
 
